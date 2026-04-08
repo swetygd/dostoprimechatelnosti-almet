@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Главная страница</title>
+</head>
+<body>
+<header class="p-3 text-bg-dark">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img class="header__img" src="static/img/almet%20gerb.png" alt="Герб Альметьевска">
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Главная</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">О проекте</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <main>
+        <style>
+            .city-card-thumb {
+                height: 225px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding: 0 14px 12px;
+                color: #eceeef;
+                text-align: right;
+                position: relative;
+                overflow: hidden;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .city-card-thumb::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to top, rgba(20, 22, 26, 0.85), rgba(20, 22, 26, 0.2));
+            }
+
+            .city-card-thumb--photo-a {
+                background-image: url("static/img/1700602.jpg");
+            }
+
+            .city-card-thumb--photo-b {
+                background-image: url("static/img/PHOTO-2026-04-05-12-03-08.jpg");
+            }
+
+            .city-card-thumb--photo-c {
+                background-image: url("static/img/PHOTO-2026-04-05-12-03-09.jpg");
+            }
+
+            .city-card {
+                border: 0;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .city-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 10px 24px rgba(26, 33, 48, 0.16);
+            }
+
+            .city-card-title {
+                line-height: 1.15;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+                font-size: 0.98rem;
+                position: relative;
+                z-index: 1;
+            }
+
+            .city-card-title--small {
+                font-size: 0.86rem;
+            }
+
+            .city-card-text {
+                margin: 0;
+                font-size: 0.98rem;
+            }
+        </style>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Альметьевск: город будущего в Татарстане</h1>
+                    <p class="lead text-body-secondary">Альметьевск — это современный и динамично развивающийся город, уютно расположившийся на востоке Татарстана, в России, на живописных берегах реки Степной Зай. Он известен прежде всего как важный центр нефтяной промышленности страны, что придает ему особый ритм и характер. Здесь удивительным образом сочетаются индустриальные пейзажи и ухоженные зеленые парки, современные архитектурные решения и сохранившиеся уголки с исторической застройкой.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-a" aria-label="Памятник нефти">
+                                <span class="city-card-title">Памятник нефти</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Скульптура, установленная в честь добычи трехмиллиардной тонны нефти в Татарстане, олицетворяющая творческий и производственный потенциал республики.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-b" aria-label="Соборная мечеть имени Ризы Фахретдина">
+                                <span class="city-card-title city-card-title--small">Соборная мечеть имени Ризы Фахретдина</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Сегодня здание религиозно-просветительского центра имени Ризы Фахретдина — важная точка притяжения в городе, ставшая мостом между его религиозной и культурной жизнью.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-c" aria-label="Парк Саулык">
+                                <span class="city-card-title">Парк «Саулык»</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Парк «Саулык» (в переводе с татарского — «Здоровье») в западной части Альметьевска — популярное место для отдыха и оздоровления.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-a" aria-label="Городской пляж">
+                                <span class="city-card-title">Городской пляж</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Белоснежный песок и чистая вода создают атмосферу курортного отдыха, а для спортивных гостей работают скалодром, веревочный парк и площадки для пляжного волейбола.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-b" aria-label="Сквер Каракуз">
+                                <span class="city-card-title">Сквер Каракуз</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Это место сочетает элементы природы, культуры и урбанистики, став одним из культурных центров города. Каракуз является всеми любимым альметьевцами местом для прогулок, фотосессий и встреч на свежем воздухе.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-c" aria-label="Каскад прудов">
+                                <span class="city-card-title">Каскад прудов</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Здесь можно насладиться прогулками по благоустроенным пешеходным дорожкам, покататься на велосипеде или самокате по специально оборудованным велодорожкам. Для детей предусмотрена современная игровая площадка с безопасным современным покрытием и игровыми комплексами из натуральных материалов.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-a" aria-label="Альметрика">
+                                <span class="city-card-title">Альметрика</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Это интерактивный научно-познавательный центр, предлагающий инновационные подходы к изучению естественных наук, делая обучение захватывающим и увлекательным.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-b" aria-label="Городской парк имени 60-летия нефти Татарстана">
+                                <span class="city-card-title city-card-title--small">Городской парк имени 60-летия нефти Татарстана</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Этот живописный парк, символизирующий тесную связь города с нефтяной промышленностью, был создан в честь значимого юбилея и стал любимым местом отдыха для жителей и гостей Альметьевска.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card city-card shadow-sm h-100">
+                            <div class="city-card-thumb city-card-thumb--photo-c" aria-label="Казанский кафедральный собор">
+                                <span class="city-card-title city-card-title--small">Казанский кафедральный собор в Альметьевске</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text city-card-text">Является одним из крупнейших храмов региона. Он впечатляет своей архитектурой и значимостью для города. Особенность собора — его звонница, состоящая из 11 колоколов, самый крупный из которых весит 1350 кг.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
