@@ -114,7 +114,10 @@
                 font-size: 0.98rem;
             }
 
-            .city-card .card-body {
+            .city-card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 padding-bottom: 5px; 
             }
             
@@ -140,14 +143,16 @@
                             <div class="card-body">
                                 <p class="card-text city-card-text">Скульптура, установленная в честь добычи трехмиллиардной тонны нефти в Татарстане, олицетворяющая творческий и производственный потенциал республики.</p>
                                     <li>
+                                        <div class="city-card-body">
                                              <a 
                                                 href="https://yandex.md/maps/org/neft/73853998837/?ll=52.266090%2C54.903288&source=serp_navig&z=16.3" 
-                                                class="btn btn-sm btn-outline-secondary" 
+                            
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                              > Перейти
                                               </a>
-                                        </li>
+                                        </div>
+                                    </li>
 
                             </div>
                         </div>
